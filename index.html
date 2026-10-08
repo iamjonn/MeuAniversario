@@ -1,18 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ano do Jorge Miguel</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="container">
     <img src="/imagens/image.png" alt="">
 
     <div class="botoes">
-      <img src="/imagens/presenca2.png" onclick="mostrar('presenca')" alt=""style="width: 32%;">
+      <img src="/imagens/presenca.png" onclick="mostrar('presenca')" alt="" style="width: 32%;">
     </div>
 
     <div id="presentes" class="presentes escondido">
@@ -27,17 +28,18 @@
     <div id="presenca" class="presenca escondido">
       <label for="nome">Seu nome:</label>
       <input type="text" id="nome" placeholder="Nome e sobrenome" oninput="validarFormulario()">
-      
+
       <label>Acompanhantes:</label>
       <div id="acompanhantes-container"></div>
       <button type="button" class="add-button" onclick="adicionarAcompanhante()">➕ Adicionar</button>
-      
+
       <button id="confirmar" class="confirm-button" onclick="enviarParaWhatsApp()" disabled>
-          👤 Confirmar presença
+        👤 Confirmar presença
       </button>
-  </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
